@@ -75,7 +75,7 @@ for filename in os.listdir(docs_dir):
 # Initialize the MultiRetrievalQAChain
 chain = MultiRetrievalQAChain.from_retrievers(OpenAI(openai_api_key=openai_api_key), retriever_names, retriever_descriptions, retrievers, verbose=True)
 
-# Test it
+# Test it yourself
 # print(chain.run("What are the differences between Newton and Feynman?"))
 
 while True:
